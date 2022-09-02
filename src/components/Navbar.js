@@ -4,6 +4,7 @@ import { logo } from "../utils/constants";
 import {Link} from 'react-router-dom'
 import SearchBar from "./SearchBar";
 const Navbar = () => {
+
   return (
     <Stack
       direction="row"
@@ -17,7 +18,7 @@ const Navbar = () => {
       }}
     >
     
-    <Link to='/' sx={{display:"flex",alignItems:'center'}}>
+    <Link  to='/' sx={{display:"flex",alignItems:'center'}}>
       <img src={logo} alt="youtubeLogo" height={45}/>
     </Link>
     <SearchBar/>

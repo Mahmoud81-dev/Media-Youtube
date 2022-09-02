@@ -72,8 +72,13 @@ const VideoDetail = () => {
           </Box>
           
         </Box>
-         {/* related videos */}
-         <Box
+
+        
+        {/* related videos */}
+        <Box display="flex" p={2}>
+          <Box  sx={{ mr: { sm: "100px" } }} />
+
+          <Box
           px={2}
           py={{ md: 1, xs: 5 }}
           justifyContent="center"
@@ -81,6 +86,9 @@ const VideoDetail = () => {
         >
           <Videos videos={videos} direction="column" />
         </Box>
+        </Box>
+         
+        
       </Stack>
     </Box>
   );

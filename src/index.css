@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ background-color: black;
 }
 
 a {
@@ -62,13 +63,19 @@ a {
   transition: all 0.3s ease;
 }
 
+.scroll:hover{
+
+ background-color: rgb(44, 43, 51);
+  transition:0.5s
+}
+
 @media screen and (max-width: 900px) {
   .category-btn{
     margin: 20px;
   }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:900px){
   .copyright{
     display:none !important;
    
@@ -79,6 +86,9 @@ a {
 @media screen and (max-width: 600px) {
   .scroll-horizontal {
     overflow: auto !important;
+  }
+  .scroll:hover{
+    background-color: #FC1503;
   }
 
   .react-player {

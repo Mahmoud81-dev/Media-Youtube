@@ -1,6 +1,6 @@
 import { Box, Stack } from '@mui/system';
-import React,{useState,useEffect} from 'react'
-import { fetchFromAPI } from '../utils/fetchFromAPI';
+import React from 'react'
+
 import {ChannelCard,VideoCard} from './';
 
 const Videos = ({videos,direction}) => {

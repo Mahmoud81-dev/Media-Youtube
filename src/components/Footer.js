@@ -18,7 +18,7 @@ const Footer = () => {
           Made With ❤️ by Mahmoud Hamdy
         </Typography>
 
-        <Stack  direction="row" mt={1.2} mb={1} gap={2}>
+        <Stack  direction="row" mt={1.5} mb={1} gap={2}>
           <a
             href="https://www.facebook.com/profile.php?id=100010258625338"
             target="_blank"

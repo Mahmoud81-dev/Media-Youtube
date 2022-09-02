@@ -22,7 +22,7 @@ const SearchBar = () => {
       sx={{
         borderRadius: 20,
         border: "1px solid #e3e3e3",
-        pl: 5,
+        pl: 4,
         mr: { sm: 5 },
         boxShadow: "none",
       }}
@@ -33,7 +33,7 @@ const SearchBar = () => {
         value={searchTerm}
         onChange={(e) => {setSearchTerm(e.target.value)}}
       />
-      <IconButton type="submit" sx={{p:"10px" ,color:"red"}}>
+      <IconButton type="submit" sx={{p:{xs:"5px 9px" ,sm:"7px 10px"} ,color:"red"}}>
         <Search/>
       </IconButton>
     </Paper>

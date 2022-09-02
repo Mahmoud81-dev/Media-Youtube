@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 
 const SearchFeed = () => {
   const [videos, setVideos] = useState([]);
-  const {searchTerm} = useParams();
+  const { searchTerm } = useParams();
   useEffect(() => {
     fetchFromAPI(`search?part=snippet&q=${searchTerm}`).then((data) =>
       setVideos(data.items)
@@ -23,27 +23,30 @@ const SearchFeed = () => {
       }}
     >
       <Box>
-      <Typography
-        variant="h4"
-        fontWeight="bold"
-        sx={{
-          color: "white",
-        }}
-        mb={2}
-      >
-        Search Result for : {" "}
-        <span
-          style={{
-            color: "#F31503",
+        <Typography
+          variant="h4"
+          fontWeight="bold"
+          sx={{
+            color: "white",
           }}
+          mb={2}
         >
-          {searchTerm}
-        </span>
-        {" "}
-        videos
-      </Typography>
+          Search Result for :{" "}
+          <span
+            style={{
+              color: "#F31503",
+            }}
+          >
+            {searchTerm}
+          </span>{" "}
+          videos
+        </Typography>
 
-      <Videos videos={videos} />
+        <Box display="flex" p={2}>
+          <Box  sx={{ mr: { sm: "100px" } }} />
+
+          <Videos videos={videos} />
+        </Box>
       </Box>
     </Box>
   );
